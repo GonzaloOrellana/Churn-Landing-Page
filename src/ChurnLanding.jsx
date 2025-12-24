@@ -44,6 +44,28 @@ const ChurnLanding = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // Scroll reveal animation hook
+    useEffect(() => {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with reveal classes
+        const revealElements = document.querySelectorAll('.reveal-fade-in, .reveal-slide-up, .reveal-slide-left, .reveal-slide-right');
+        revealElements.forEach(el => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
+
     // Manejo del scroll para el navbar
     useEffect(() => {
         const handleScroll = () => {
@@ -140,6 +162,44 @@ const ChurnLanding = () => {
           34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
           67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
         }
+        
+        /* Scroll Reveal Animations */
+        .reveal-fade-in {
+          opacity: 0;
+          transition: opacity 0.8s ease-out;
+        }
+        
+        .reveal-slide-up {
+          opacity: 0;
+          transform: translateY(40px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .reveal-slide-left {
+          opacity: 0;
+          transform: translateX(-40px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .reveal-slide-right {
+          opacity: 0;
+          transform: translateX(40px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .reveal-visible {
+          opacity: 1 !important;
+          transform: translateY(0) translateX(0) !important;
+        }
+        
+        /* Custom Cursor */
+        * {
+          cursor: url('/imagenes/churro-cursor.png'), auto !important;
+        }
+        
+        button, a, [role="button"] {
+          cursor: url('/imagenes/churro-cursor.png'), pointer !important;
+        }
       `}</style>
 
             {/* --- NAVBAR --- */}
@@ -205,7 +265,7 @@ const ChurnLanding = () => {
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white blob-shape opacity-20 -z-10 -translate-x-1/4 translate-y-1/4"></div>
 
                 <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6 md:pr-10">
+                    <div className="space-y-6 md:pr-10 reveal-slide-left">
                         {/* Cambio: Fondo de la pastilla ajustado para contraste con amarillo */}
 
                         <h1 className="font-branding text-5xl md:text-7xl leading-[1.1] text-[#4A3B32]">
@@ -226,7 +286,7 @@ const ChurnLanding = () => {
                         </div>
 
                         {/* Social Proof */}
-                        <div className="flex items-center gap-4 pt-6">
+                        <div className="flex items-center gap-4 pt-6 reveal-fade-in">
                             <div className="flex -space-x-3">
                                 <div className="w-10 h-10 rounded-full border-2 border-[#fcf283] bg-gray-200 overflow-hidden">
                                     <img src="/imagenes/aisha.png" alt="User" className="w-full h-full object-cover" />
@@ -255,7 +315,7 @@ const ChurnLanding = () => {
                     </div>
 
                     {/* Hero Image / Composition */}
-                    <div className="relative">
+                    <div className="relative reveal-slide-right">
                         <div className="aspect-square relative z-10">
                             <img
                                 src="/imagenes/bolsaChurn.png"
@@ -276,7 +336,7 @@ const ChurnLanding = () => {
                 <div className="container mx-auto px-6">
                     <div className="grid md:grid-cols-12 gap-12 items-center">
                         {/* Image Grid */}
-                        <div className="md:col-span-5 grid grid-cols-2 gap-4">
+                        <div className="md:col-span-5 grid grid-cols-2 gap-4 reveal-slide-left">
                             <img
                                 src="/imagenes/fotoAbout.jpeg"
                                 className="rounded-2xl w-full h-64 object-cover translate-y-8"
@@ -290,7 +350,7 @@ const ChurnLanding = () => {
                         </div>
 
                         {/* Content */}
-                        <div className="md:col-span-7 md:pl-10">
+                        <div className="md:col-span-7 md:pl-10 reveal-slide-right">
                             <h2 className="font-branding text-4xl md:text-5xl text-[#4A3B32] mb-6">
                                 No seguimos modas, <br />
                                 <span className="text-[#fc6471]">perfeccionamos la receta.</span>
@@ -321,7 +381,7 @@ const ChurnLanding = () => {
             {/* CAMBIO: Fondo actualizado a #fcf283 */}
             <section id="productos" className="py-24 bg-[#fcf283]">
                 <div className="container mx-auto px-6">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
+                    <div className="text-center max-w-2xl mx-auto mb-16 reveal-slide-up">
                         <span className="text-[#fc6471] font-bold font-body tracking-wider uppercase text-sm">Nuestro Menú</span>
                         <h2 className="font-branding text-4xl md:text-5xl mt-2 mb-6 text-[#4A3B32]">Delicias Crujientes</h2>
 
@@ -410,7 +470,7 @@ const ChurnLanding = () => {
 
             {/* --- MAYORISTA (B2B) --- */}
             < section id="mayorista" className="py-20 px-6" >
-                <div className="container mx-auto bg-[#4A3B32] rounded-[3rem] text-white overflow-hidden relative">
+                <div className="container mx-auto bg-[#4A3B32] rounded-[3rem] text-white overflow-hidden relative reveal-slide-up">
                     <div className="grid md:grid-cols-2">
                         <div className="p-12 md:p-16 flex flex-col justify-center relative z-10">
                             <div className="inline-block bg-[#fc6471] text-white text-xs font-bold px-3 py-1 rounded-md w-fit mb-6">B2B</div>
@@ -443,7 +503,7 @@ const ChurnLanding = () => {
             < section id="donde" className="bg-white pt-20" >
                 <div className="container mx-auto px-6 mb-20">
                     <div className="grid md:grid-cols-2 gap-12">
-                        <div>
+                        <div className="reveal-slide-left">
                             <h2 className="font-branding text-4xl text-[#4A3B32] mb-8">¿Donde estamos?</h2>
 
                             <div className="space-y-8 font-body">
@@ -482,7 +542,7 @@ const ChurnLanding = () => {
                         </div>
 
                         {/* Simulated Map Visual */}
-                        <div className="bg-gray-100 rounded-3xl overflow-hidden min-h-[400px] relative group">
+                        <div className="bg-gray-100 rounded-3xl overflow-hidden min-h-[400px] relative group reveal-slide-right">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.2874481124593!2d-58.489652!3d-34.690677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccecba08866cd%3A0xb40d37c44360b63a!2sChurn!5e0!3m2!1ses!2sus!4v1766519734012!5m2!1ses!2sus"
                                 className="w-full h-full absolute inset-0 border-0"
