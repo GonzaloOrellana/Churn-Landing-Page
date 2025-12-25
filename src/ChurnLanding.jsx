@@ -205,7 +205,7 @@ const ChurnLanding = () => {
             {/* --- NAVBAR --- */}
             <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#fcf283]/90 backdrop-blur-md shadow-sm py-3 rounded-b-3xl' : 'bg-transparent py-6'}`}>
                 <div className="container mx-auto px-6 flex justify-between items-center">
-                    <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
+                    <div className="flex items-center gap-2 cursor-pointer reveal-fade-in" onClick={() => scrollToSection('hero')}>
                         <img
                             src="/imagenes/LOGO CHURN.png"
                             alt="Churn Logo"
@@ -215,11 +215,11 @@ const ChurnLanding = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center gap-8 font-body font-medium">
-                        <button onClick={() => scrollToSection('nosotros')} className="hover:text-[#fc6471] transition-colors">Nosotros</button>
-                        <button onClick={() => scrollToSection('productos')} className="hover:text-[#fc6471] transition-colors">Productos</button>
-                        <button onClick={() => scrollToSection('mayorista')} className="hover:text-[#fc6471] transition-colors">Venta Mayorista</button>
-                        <button onClick={() => scrollToSection('donde')} className="hover:text-[#fc6471] transition-colors">Ubicación</button>
-                        <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%21+Quiero+hacerte+un+pedido&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnePtbaeWW-y68pnczlro77dIP841_26hj8b69NhVJZUJ3n904y2ESA9frLs4_aem_vHnWeh59uooNcdc-kd73eA&brid=AWUwGOzYtz3qLsl12NQ_Wg" target="_blank" rel="noopener noreferrer" className="bg-[#fc6471] text-white px-6 py-2.5 rounded-full font-bold hover:bg-[#e0505c] transition-transform hover:scale-105 shadow-lg shadow-[#fc6471]/30 flex items-center gap-2">
+                        <button onClick={() => scrollToSection('nosotros')} className="hover:text-[#fc6471] transition-colors reveal-fade-in delay-[300ms]">Nosotros</button>
+                        <button onClick={() => scrollToSection('productos')} className="hover:text-[#fc6471] transition-colors reveal-fade-in delay-[600ms]">Productos</button>
+                        <button onClick={() => scrollToSection('mayorista')} className="hover:text-[#fc6471] transition-colors reveal-fade-in delay-[900ms]">Venta Mayorista</button>
+                        <button onClick={() => scrollToSection('donde')} className="hover:text-[#fc6471] transition-colors reveal-fade-in delay-[1200ms]">Ubicación</button>
+                        <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%21+Quiero+hacerte+un+pedido&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnePtbaeWW-y68pnczlro77dIP841_26hj8b69NhVJZUJ3n904y2ESA9frLs4_aem_vHnWeh59uooNcdc-kd73eA&brid=AWUwGOzYtz3qLsl12NQ_Wg" target="_blank" rel="noopener noreferrer" className="bg-[#fc6471] text-white px-6 py-2.5 rounded-full font-bold hover:bg-[#e0505c] transition-transform hover:scale-105 shadow-lg shadow-[#fc6471]/30 flex items-center gap-2 reveal-fade-in delay-[1500ms]">
                             <ShoppingBag size={18} />
                             Pedir Ahora
                         </a>
@@ -249,32 +249,44 @@ const ChurnLanding = () => {
                         <X size={28} />
                     </button>
 
-                    <button onClick={() => { scrollToSection('nosotros'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-gray-100 text-[#4A3B32]">Nosotros</button>
-                    <button onClick={() => { scrollToSection('productos'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-gray-100 text-[#4A3B32]">Productos</button>
-                    <button onClick={() => { scrollToSection('mayorista'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-gray-100 text-[#4A3B32]">Mayorista</button>
-                    <button onClick={() => { scrollToSection('donde'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-gray-100 text-[#4A3B32]">Ubicación</button>
+                    <button onClick={() => { scrollToSection('nosotros'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-[#fc6471]/30 text-[#4A3B32]">Nosotros</button>
+                    <button onClick={() => { scrollToSection('productos'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-[#fc6471]/30 text-[#4A3B32]">Productos</button>
+                    <button onClick={() => { scrollToSection('mayorista'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-[#fc6471]/30 text-[#4A3B32]">Mayorista</button>
+                    <button onClick={() => { scrollToSection('donde'); setIsMenuOpen(false) }} className="text-left text-lg py-2 border-b border-[#fc6471]/30 text-[#4A3B32]">Ubicación</button>
                     <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%21+Quiero+hacerte+un+pedido&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnePtbaeWW-y68pnczlro77dIP841_26hj8b69NhVJZUJ3n904y2ESA9frLs4_aem_vHnWeh59uooNcdc-kd73eA&brid=AWUwGOzYtz3qLsl12NQ_Wg" target="_blank" rel="noopener noreferrer" className="bg-[#fc6471] text-white w-full py-3 rounded-xl font-bold mt-4 shadow-lg shadow-[#fc6471]/30 text-center block">Hacer Pedido</a>
                 </div>
             </div>
 
             {/* --- HERO SECTION --- */}
-            <section id="hero" className="relative pt-32 pb-20 md:pt-24 md:pb-32 px-6 overflow-hidden">
-                {/* Background Decorative Blobs */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#fc6471] blob-shape opacity-10 -z-10 translate-x-1/3 -translate-y-1/4"></div>
-                {/* Adjusted opacity/color for the yellow blob on yellow background to keep it visible but subtle */}
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white blob-shape opacity-20 -z-10 -translate-x-1/4 translate-y-1/4"></div>
+            <section
+                id="hero"
+                className="relative pt-24 pb-20 md:pt-40 md:pb-32 px-6 overflow-hidden bg-[#fcf283]"
+            >
+                {/* Desktop Background Image with Fade In */}
+                <div
+                    className="hidden md:block absolute inset-0 bg-[url('/imagenes/FondoCreativoSinFondo.png')] bg-cover bg-[right_center] bg-no-repeat reveal-fade-in z-0"
+                ></div>
+
+                {/* Mobile Image - Centered and visible only on mobile */}
+                <div className="md:hidden relative flex justify-center mb-8 reveal-fade-in -mx-6">
+                    <img
+                        src="/imagenes/FondoCreativoSinFondo -mobile.png"
+                        alt="Churros y Chocolate"
+                        className="w-full object-cover"
+                    />
+                    {/* Soft gradient at the bottom for smooth transition */}
+                    <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#fcf283] to-transparent pointer-events-none"></div>
+                </div>
 
                 <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6 md:pr-10 reveal-slide-left">
-                        {/* Cambio: Fondo de la pastilla ajustado para contraste con amarillo */}
-
-                        <h1 className="font-branding text-5xl md:text-7xl leading-[1.1] text-[#4A3B32]">
+                    <div className="space-y-6 md:pr-10 relative z-10">
+                        <h1 className="font-branding text-5xl md:text-7xl leading-[1.1] text-[#4A3B32] md:drop-shadow-none text-center md:text-left reveal-slide-left">
                             Churros de verdad, <span className="text-[#fc6471] italic">hechos con amor.</span>
                         </h1>
-                        <p className="font-body text-lg text-[#4A3B32]/80 max-w-md leading-relaxed">
+                        <p className="font-body text-lg text-[#4A3B32]/80 max-w-md leading-relaxed text-center md:text-left mx-auto md:mx-0 reveal-slide-left">
                             Crujientes por fuera, suaves por dentro. Elaborados al momento con ingredientes seleccionados para que cada bocado sea una experiencia.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start reveal-fade-in delay-300">
                             <button onClick={() => scrollToSection('productos')} className="bg-[#fc6471] text-white px-8 py-4 rounded-full font-bold font-body text-lg hover:bg-[#e0505c] transition-all shadow-xl shadow-[#fc6471]/20 flex items-center justify-center gap-2 group">
                                 Ver Menú
                                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
@@ -286,7 +298,7 @@ const ChurnLanding = () => {
                         </div>
 
                         {/* Social Proof */}
-                        <div className="flex items-center gap-4 pt-6 reveal-fade-in">
+                        <div className="flex items-center justify-center md:justify-start gap-4 pt-6 reveal-fade-in delay-500">
                             <div className="flex -space-x-3">
                                 <div className="w-10 h-10 rounded-full border-2 border-[#fcf283] bg-gray-200 overflow-hidden">
                                     <img src="/imagenes/aisha.png" alt="User" className="w-full h-full object-cover" />
@@ -302,7 +314,7 @@ const ChurnLanding = () => {
                                 </div>
                             </div>
                             <div className="font-body text-sm">
-                                <div className="flex text-[#4A3B32] gap-0.5">
+                                <div className="flex text-[#F59E0B] gap-0.5">
                                     <Star size={14} fill="currentColor" />
                                     <Star size={14} fill="currentColor" />
                                     <Star size={14} fill="currentColor" />
@@ -314,20 +326,8 @@ const ChurnLanding = () => {
                         </div>
                     </div>
 
-                    {/* Hero Image / Composition */}
-                    <div className="relative reveal-slide-right">
-                        <div className="aspect-square relative z-10">
-                            <img
-                                src="/imagenes/bolsaChurn.png"
-                                alt="Churros deliciosos"
-                                className="w-full h-full object-contain drop-shadow-2xl rotate-3 hover:rotate-0 transition-all duration-700"
-                            />
-                            {/* Floating Elements */}
-
-                        </div>
-                        {/* Decor */}
-                        <div className="absolute top-10 -right-10 w-24 h-24 bg-white rounded-full blur-3xl opacity-40"></div>
-                    </div>
+                    {/* Right side - Empty to let background image show through on Desktop */}
+                    <div className="hidden md:block"></div>
                 </div>
             </section>
 
@@ -350,7 +350,7 @@ const ChurnLanding = () => {
                         </div>
 
                         {/* Content */}
-                        <div className="md:col-span-7 md:pl-10 reveal-slide-right">
+                        <div className="md:col-span-7 md:pl-10 reveal-slide-right mt-12 md:mt-0">
                             <h2 className="font-branding text-4xl md:text-5xl text-[#4A3B32] mb-6">
                                 No seguimos modas, <br />
                                 <span className="text-[#fc6471]">perfeccionamos la receta.</span>
@@ -479,9 +479,9 @@ const ChurnLanding = () => {
                                 Llevá la calidad de Churn a tus clientes. Ofrecemos precios especiales para mayoristas, entregas programadas y productos personalizados para tu marca.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="bg-[#fc6471] text-white px-8 py-3.5 rounded-xl font-bold font-body hover:bg-[#e0505c] transition-colors">
+                                <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%2C%20vi%20su%20web%20y%20estoy%20interesado%20en%20comprar%20por%20mayor" target="_blank" rel="noopener noreferrer" className="bg-[#fc6471] text-white px-8 py-3.5 rounded-xl font-bold font-body hover:bg-[#e0505c] transition-colors text-center">
                                     Contactar Ventas
-                                </button>
+                                </a>
                                 <button className="bg-transparent border border-white/30 text-white px-8 py-3.5 rounded-xl font-bold font-body hover:bg-white/10 transition-colors">
                                     Descargar Catálogo
                                 </button>
@@ -578,12 +578,25 @@ const ChurnLanding = () => {
                             </div>
                         </div>
 
-                        <div className="border-t border-[#E5DACE]/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-body opacity-60">
-                            <p>&copy; 2024 Churn Churros. Todos los derechos reservados.</p>
-                            <div className="flex gap-6 mt-4 md:mt-0">
-                                <a href="#" className="hover:text-white">Privacidad</a>
-                                <a href="#" className="hover:text-white">Términos</a>
-                                <p>Diseñado y Desarrollado por <a href="https://gonzaorellana.com.ar/portfolio/" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-[#fc6471] transition-colors">Gonzalo Orellana</a></p>
+                        <div className="border-t border-[#E5DACE]/20 pt-8 text-sm font-body opacity-60">
+                            {/* Desktop Layout - All in one line */}
+                            <div className="hidden md:flex justify-between items-center">
+                                <p>&copy; 2024 Churn Churros. Todos los derechos reservados.</p>
+                                <div className="flex gap-6">
+                                    <a href="#" className="hover:text-white">Privacidad</a>
+                                    <a href="#" className="hover:text-white">Términos</a>
+                                    <p>Diseñado y Desarrollado por <a href="https://gonzaorellana.com.ar/portfolio/" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-[#fc6471] transition-colors">Gonzalo Orellana</a></p>
+                                </div>
+                            </div>
+
+                            {/* Mobile Layout - Stacked with designer credit at bottom */}
+                            <div className="flex flex-col md:hidden space-y-4">
+                                <p className="text-center">&copy; 2024 Churn Churros. Todos los derechos reservados.</p>
+                                <div className="flex gap-6 justify-center">
+                                    <a href="#" className="hover:text-white">Privacidad</a>
+                                    <a href="#" className="hover:text-white">Términos</a>
+                                </div>
+                                <p className="text-center mt-2">Diseñado y Desarrollado por <a href="https://gonzaorellana.com.ar/portfolio/" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-[#fc6471] transition-colors">Gonzalo Orellana</a></p>
                             </div>
                         </div>
                     </div>
