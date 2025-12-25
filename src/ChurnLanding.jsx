@@ -148,7 +148,15 @@ const ChurnLanding = () => {
           font-style: normal;
         }
         
-        .font-branding { font-family: 'Genty Demo', serif; }
+        .font-branding { 
+          font-family: 'Genty Demo', serif; 
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        
+        .shadow-light {
+          text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.2);
+        }
+
         .font-serif-display { font-family: 'Fraunces', serif; }
         .font-body { font-family: 'Poppins', sans-serif; }
         
@@ -474,7 +482,7 @@ const ChurnLanding = () => {
                     <div className="grid md:grid-cols-2">
                         <div className="p-12 md:p-16 flex flex-col justify-center relative z-10">
                             <div className="inline-block bg-[#fc6471] text-white text-xs font-bold px-3 py-1 rounded-md w-fit mb-6">B2B</div>
-                            <h2 className="font-branding text-3xl md:text-5xl mb-6">¿Tienes un negocio?</h2>
+                            <h2 className="font-branding shadow-light text-3xl md:text-5xl mb-6">¿Tienes un negocio?</h2>
                             <p className="font-body text-white/80 text-lg mb-8">
                                 Llevá la calidad de Churn a tus clientes. Ofrecemos precios especiales para mayoristas, entregas programadas y productos personalizados para tu marca.
                             </p>
