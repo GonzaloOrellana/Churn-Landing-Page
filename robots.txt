@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+# Robots.txt para Churn Churrería Artesanal
+
+User-agent: *
+Allow: /
+
+# Ubicación del Sitemap XML
+Sitemap: https://churreriachurn.com.ar/sitemap.xml

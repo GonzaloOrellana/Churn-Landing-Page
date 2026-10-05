@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ======================================================== -->
+  <!-- METADATOS PRINCIPALES DE SEO                              -->
+  <!-- ======================================================== -->
+  <title>Churn | Churreria</title>
+  <meta name="description"
+    content="Churrería artesanal en Villa Madero. Churros crujientes y suaves elaborados al momento: rellenos de dulce de leche, bañados en chocolate, crema pastelera, chipá y berlinesas. ¡Hacé tu pedido online!">
+  <meta name="keywords"
+    content="churros artesanales, churreria en villa madero, churros rellenos dulce de leche, churros de chocolate, chipa, berlinesas, churros mayoristas buenos aires, desayunos y meriendas, churn churreria">
+  <meta name="author" content="Churn Churrería Artesanal">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://churreriachurn.com.ar/">
+
+  <!-- ======================================================== -->
+  <!-- FAVICON & ICONOS PWA                                     -->
+  <!-- ======================================================== -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="shortcut icon" href="./assets/favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/images/churnLogo.png">
+  <meta name="theme-color" content="#FBF084">
+  <meta name="msapplication-TileColor" content="#FBF084">
+
+  <!-- ======================================================== -->
+  <!-- OPTIMIZACIÓN DE RENDIMIENTO / RECURSOS EXTERNOS          -->
+  <!-- ======================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ======================================================== -->
+  <!-- LOCAL SEO & GEOLOCALIZACIÓN                              -->
+  <!-- ======================================================== -->
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="Villa Madero, La Matanza, Buenos Aires">
+  <meta name="geo.position" content="-34.691111;-58.491352">
+  <meta name="ICBM" content="-34.691111, -58.491352">
+
+  <!-- ======================================================== -->
+  <!-- OPEN GRAPH / REDES SOCIALES (WHATSAPP, FACEBOOK, INSTAGRAM) -->
+  <!-- ======================================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Churn Churrería Artesanal">
+  <meta property="og:title" content="Churn | Churrería Artesanal en Villa Madero">
+  <meta property="og:description"
+    content="Churros de verdad, crujientes por fuera y suaves por dentro, elaborados al momento con ingredientes seleccionados. ¡Hacé tu pedido online!">
+  <meta property="og:url" content="https://churreriachurn.com.ar/">
+  <meta property="og:image" content="./assets/images/churnLogo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo oficial Churn Churrería Artesanal">
+
+  <!-- ======================================================== -->
+  <!-- TWITTER CARDS                                            -->
+  <!-- ======================================================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Churn | Churrería Artesanal en Villa Madero">
+  <meta name="twitter:description"
+    content="Churros crujientes y suaves hechos al momento en Villa Madero. Dulce de leche, chocolates, chipá y venta mayorista.">
+  <meta name="twitter:image" content="./assets/images/churnLogo.png">
+
+  <!-- ======================================================== -->
+  <!-- DATOS ESTRUCTURADOS SCHEMA.ORG (JSON-LD) PARA GOOGLE      -->
+  <!-- ======================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Churn",
+    "alternateName": [
+      "Churn Churrería",
+      "Churn Churrería Artesanal"
+    ],
+    "description": "Churrería artesanal en Villa Madero. Churros crujientes y suaves elaborados al momento con dulce de leche, chocolates y crema pastelera. Chipás, berlinesas y pedidos mayoristas.",
+    "url": "https://churreriachurn.com.ar/",
+    "logo": "https://churreriachurn.com.ar/assets/images/churnLogo.png",
+    "image": "https://churreriachurn.com.ar/assets/images/churnLogo.png",
+    "telephone": "+541128673102",
+    "priceRange": "$",
+    "servesCuisine": "Churros, Pastelería Artesanal, Panadería",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cno. de la Virgen María 89",
+      "addressLocality": "Villa Madero",
+      "addressRegion": "Provincia de Buenos Aires",
+      "postalCode": "B1768",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.6911114,
+      "longitude": -58.4913518
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday"],
+        "opens": "15:30",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "12:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "15:30",
+        "closes": "19:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/churreria.churn/",
+      "https://www.google.com/maps/place/Churn/@-34.6911114,-58.4913518,17z"
+    ],
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Menú Churn",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Churro Clásico",
+          "description": "Crujiente por fuera y suave por dentro, elaborado al momento y rebozado en azúcar."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Churro Bañado en Chocolate",
+          "description": "Churro artesanal bañado con fino chocolate semi-amargo."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Churro Relleno de Dulce de Leche",
+          "description": "Generosamente relleno con auténtico dulce de leche repostero argentino."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Churro Bañado en Chocolate Blanco",
+          "description": "Delicioso churro cubierto de crocante chocolate blanco premium."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Churro Relleno de Crema Pastelera",
+          "description": "Relleno tradicional con cremosa crema pastelera casera."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Chipá Artesanal",
+          "description": "Receta tradicional de chipá de queso caliente y recién horneado."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Berlinesa",
+          "description": "Esponjosa y suave berlinesa frita a la perfección rellena a elección."
+        }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- HEADER / NAVEGACIÓN PRINCIPAL                            -->
+  <header id="main-header" class="main-header">
+    <div class="header-container">
+      <button type="button" class="header-logo-btn" data-nav-target="Home" aria-label="Churn Inicio">
+        <img src="./assets/images/churnLogo.png" alt="Churn Churrería Artesanal - Logo Oficial" class="header-logo-img"
+          width="100" height="56" fetchpriority="high">
+      </button>
+      <nav class="header-nav" id="header-nav">
+        <a href="#hero" data-nav-target="Home" class="nav-link">Home</a>
+        <a href="#sobre-nosotros" data-nav-target="Sobre Nosotros" class="nav-link">Sobre Nosotros</a>
+        <a href="#productos" data-nav-target="Productos" class="nav-link">Productos</a>
+        <a href="#mayorista" data-nav-target="Mayoristas" class="nav-link">Mayoristas</a>
+        <a href="#donde-estamos" data-nav-target="Donde estamos" class="nav-link">Donde estamos</a>
+      </nav>
+      <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%21%2520Quiero%2520hacerte%2520un%2520pedido&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafN3R5CNTGIslj_UbaNvihkE4BYiP-1l1UafSDGPbGMYuj22YgcrqD0tvtkQw_aem_4cGZSrb9NsQuetuQtjwTtg"
+        target="_blank" rel="noopener noreferrer" class="header-cta" aria-label="Realizar Pedido por WhatsApp">
+        <span>Realizar Pedido</span>
+      </a>
+      <!-- Botón menú hamburguesa (solo mobile) -->
+      <button type="button" class="boton-menu menu-toggle" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="header-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="canvas-wrapper">
+    <div id="canvas">
+      <!-- ======================================================== -->
+      <!-- CONTENEDOR PRINCIPAL                                     -->
+      <!-- ======================================================== -->
+      <main class="canvas-content" data-name="Churn Landing">
+
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 1: HERO                                        -->
+        <!-- ====================================================== -->
+        <section id="hero" class="hero-section" data-name="Hero Section">
+          <!-- Fondos decorativos -->
+          <div class="hero-bg-circle-yellow">
+            <svg viewBox="0 0 798 798" fill="none">
+              <circle cx="399" cy="399" r="399" fill="#FBF084" />
+            </svg>
+          </div>
+          <div class="hero-bg-circle-pink">
+            <svg viewBox="0 0 899.8 899.8" fill="none">
+              <g filter="url(#hero-blur)">
+                <circle cx="449.9" cy="449.9" r="325" fill="#F25C7A" />
+              </g>
+              <defs>
+                <filter id="hero-blur" x="0" y="0" width="899.8" height="899.8" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feGaussianBlur stdDeviation="62.45" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Título Principal H1 Semántico y Optimizado para SEO -->
+          <h1 class="hero-title">
+            <span class="sr-only">Churn - Churrería Artesanal en Villa Madero: </span>
+            <span>Churros de Verdad.</span>
+            <span>Hechos con Amor!</span>
+          </h1>
+
+          <!-- Bajada / Descripción -->
+          <p class="hero-description">
+            Crujientes por fuera, suaves por dentro. Elaborados al momento con ingredientes seleccionados para que cada
+            bocado sea una experiencia que no vas a olvidar.
+          </p>
+
+          <!-- Grupo de Botones del Hero -->
+          <div class="hero-botones-grupo">
+            <!-- Botón CTA Principal: Explorar Sabores -->
+            <button type="button" class="hero-cta-btn hero-boton-explorar" data-nav-target="Productos"
+              aria-label="Explorar Sabores de Churros">
+              <span>Explorar Sabores</span>
+              <svg class="hero-btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v10.586l3.293-3.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <!-- Cartel de Estado del Local (Abierto / Cerrado dinámico) -->
+            <div class="cartel-estado-local hero-timer-badge" id="hero-estado-local" aria-live="polite">
+              <div class="estado-header">
+                <span class="punto-estado" id="estado-punto"></span>
+                <span class="estado-titulo" id="estado-titulo">Cargando estado...</span>
+              </div>
+              <span class="estado-detalle" id="estado-detalle">Viernes, Sábados y Domingos</span>
+            </div>
+          </div>
+
+          <!-- Ubicación Resumen -->
+          <div class="hero-location">
+            <svg class="location-icon" viewBox="0 0 23 32" fill="none">
+              <path
+                d="M11.5003 6.11295C8.41143 6.11295 5.89752 8.71861 5.89752 11.9203C5.89752 15.122 8.41136 17.7277 11.5003 17.7277C14.5892 17.7277 17.103 15.1221 17.103 11.9203C17.103 8.71868 14.5892 6.11295 11.5003 6.11295ZM11.5003 15.8937C9.38599 15.8937 7.66697 14.1117 7.66697 11.9203C7.66697 9.72884 9.3861 7.94703 11.5003 7.94703C13.6144 7.94703 15.3336 9.72895 15.3336 11.9203C15.3336 14.1118 13.6144 15.8937 11.5003 15.8937ZM11.5003 0C5.15887 0 0 5.34731 0 11.9203C0 20.946 10.4476 31.312 10.8911 31.7494C11.0621 31.9175 11.2803 32 11.5 32C11.7182 32 11.9379 31.9159 12.1089 31.7494C12.5527 31.3123 23 20.9464 23 11.9203C23 5.34731 17.8417 0 11.5003 0ZM11.5003 29.7901C9.28132 27.4443 1.76945 18.9761 1.76945 11.9203C1.76945 6.35903 6.13493 1.83408 11.5003 1.83408C16.8656 1.83408 21.2311 6.35903 21.2311 11.9203C21.2311 18.9777 13.7192 27.4443 11.5003 29.7901Z"
+                fill="#F25C7A" />
+            </svg>
+            <span class="location-text">Cno. de la Virgen María 89, Villa Madero</span>
+          </div>
+
+          <!-- Flecha Decorativa -->
+          <div class="hero-arrow-wrapper">
+            <svg viewBox="0 0 282.122 198.381" fill="none">
+              <path
+                d="M234.693 176.233C244.511 180.877 248.43 190.09 255.672 197.488C256.843 198.685 259.192 198.671 260.366 197.488C267.084 190.721 273.036 183.402 280.959 177.746C284.339 175.334 279.603 171.045 276.265 173.429C268.341 179.084 262.388 186.404 255.672 193.171C257.236 193.171 258.802 193.171 260.366 193.171C252.703 185.343 249.125 177.209 238.714 172.285C234.914 170.489 230.885 174.431 234.693 176.233Z"
+                fill="#5D2610" fill-opacity="0.5" />
+              <path
+                d="M2.46084 29.2688C-3.73776 -5.02128 42.1679 1.95069 67.516 5.58241C85.262 8.12485 102.81 13.6103 118.126 22.2951C129.916 28.9797 142.278 39.2741 142.968 52.8717C143.87 70.5943 125.011 84.9343 106.735 84.7048C95.5054 84.5631 89.2244 77.34 90.5802 67.3192C91.9254 57.3704 98.5954 49.3596 107.652 44.166C127.014 33.0621 153.489 33.6958 175.19 36.6144C195.516 39.3486 219.321 45.1051 234.442 58.7198C245.118 68.3315 246.301 84.7841 240.914 96.9456C234.808 110.729 220.091 115.399 205.273 110.927C205.606 112.846 205.938 114.766 206.272 116.686C225.881 113.921 244.059 119.55 253.359 136.424C261.736 151.627 260.758 170.794 255.081 186.597C254.157 189.169 258.609 193.573 259.762 190.364C266.38 171.94 266.736 150.967 257.041 133.373C246.869 114.919 226.1 107.851 204.612 110.88C201.127 111.371 203.369 115.961 205.61 116.639C228.494 123.547 246.452 109.313 248.985 88.4073C251.381 68.6136 239.326 53.1879 221.144 44.1734C201.228 34.3003 177.659 30.0226 155.231 29.2399C135.045 28.534 111.41 31.2218 96.2304 44.7314C83.7402 55.8488 79.07 79.4697 97.0258 88.0825C114.523 96.4767 135.869 84.5167 144.04 70.1803C160.147 41.9204 127.234 18.9162 102.444 9.17505C79.5202 0.167806 29.3889 -1.09835 19.8693 0.702853C10.3496 2.50406 -6.28127 9.1671 2.46084 29.2688C-1.86173 5.41806 3.07831 32.6758 2.46084 29.2688Z"
+                fill="#5D2610" fill-opacity="0.5" />
+            </svg>
+          </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 2: SOBRE NOSOTROS                              -->
+        <!-- ====================================================== -->
+        <section id="sobre-nosotros" class="about-section" data-name="Sobre Nosotros">
+          <h2 class="about-title">Sobre Nosotros</h2>
+
+          <p class="about-description">
+            En Churn creemos que la excelencia está en los detalles. No seguimos modas ni fórmulas rápidas:
+            perfeccionamos el arte de hacer churros para ofrecer una experiencia que combina tradición y calidad.
+          </p>
+
+          <!-- Icono Instagram -->
+          <a href="https://www.instagram.com/churreria.churn/" target="_blank" rel="noopener noreferrer"
+            class="about-instagram-icon" aria-label="Instagram de Churn">
+            <svg viewBox="0 0 40.9265 40.9265" fill="none">
+              <path
+                d="M20.4633 0C14.9058 0 14.2089 0.0235767 12.0263 0.123123C9.84818 0.222486 8.36065 0.568461 7.059 1.07423C5.71336 1.59718 4.57218 2.29693 3.43458 3.43452C2.29693 4.57211 1.59718 5.71342 1.07429 7.05906C0.5684 8.36065 0.222547 9.84818 0.123062 12.0263C0.0235158 14.2089 0 14.9058 0 20.4633C0 26.0207 0.0235158 26.7176 0.123062 28.9002C0.222547 31.0783 0.5684 32.5658 1.07429 33.8674C1.59725 35.2131 2.29699 36.3542 3.43458 37.492C4.57224 38.6295 5.71336 39.3293 7.059 39.8523C8.36065 40.358 9.84818 40.7039 12.0263 40.8034C14.2089 40.9029 14.9058 40.9265 20.4633 40.9265C26.0207 40.9265 26.7176 40.9029 28.9002 40.8034C31.0783 40.704 32.5658 40.358 33.8674 39.8523C35.2131 39.3293 36.3542 38.6295 37.492 37.492C38.6295 36.3542 39.3293 35.2131 39.8523 33.8674C40.358 32.5658 40.704 31.0783 40.8034 28.9002C40.9029 26.7176 40.9265 26.0207 40.9265 20.4633C40.9265 14.9058 40.9029 14.2089 40.8034 12.0263C40.704 9.84818 40.358 8.36065 39.8523 7.05906C39.3293 5.71342 38.6295 4.57211 37.492 3.43452C36.3542 2.29693 35.2131 1.59718 33.8674 1.07423C32.5658 0.568461 31.0783 0.222486 28.9002 0.123123C26.7176 0.0235767 26.0207 0 20.4633 0ZM20.4633 3.68704C25.9271 3.68704 26.5744 3.70794 28.7321 3.80639C30.7273 3.89735 31.8108 4.23071 32.5318 4.51095C33.4871 4.88221 34.1687 5.32559 34.8848 6.04167C35.6009 6.75774 36.0443 7.43946 36.4155 8.39459C36.6958 9.11566 37.0291 10.1992 37.1201 12.1943C37.2185 14.3521 37.2394 14.9994 37.2394 20.4632C37.2394 25.9271 37.2185 26.5744 37.1201 28.7321C37.0291 30.7273 36.6958 31.8108 36.4155 32.5318C36.0443 33.4871 35.6009 34.1687 34.8848 34.8848C34.1687 35.6009 33.487 36.0443 32.5319 36.4155C31.8108 36.6958 30.7273 37.0291 28.7321 37.1201C26.5747 37.2185 25.9276 37.2394 20.4632 37.2394C14.9989 37.2394 14.3519 37.2185 12.1943 37.12C10.1991 37.0291 9.11566 36.6958 8.39465 36.4155C7.4394 36.0443 6.75774 35.6009 6.04173 34.8848C5.32565 34.1687 4.88221 33.487 4.51095 32.5319C4.23071 31.8108 3.89741 30.7273 3.80639 28.7321C3.70794 26.5744 3.68704 25.9271 3.68704 20.4632C3.68704 14.9994 3.70794 14.3521 3.80639 12.1943C3.89741 10.1991 4.23071 9.11566 4.51095 8.39465C4.88221 7.4394 5.32565 6.75774 6.04167 6.04173C6.75774 5.32559 7.43946 4.88221 8.39459 4.51095C9.11566 4.23071 10.1992 3.89735 12.1943 3.80639C14.3521 3.70794 14.9994 3.68704 20.4632 3.68704"
+                fill="#FBF084" />
+              <path
+                d="M20.4633 27.2844C16.6961 27.2844 13.6422 24.2305 13.6422 20.4633C13.6422 16.6961 16.6961 13.6422 20.4633 13.6422C24.2305 13.6422 27.2844 16.6961 27.2844 20.4633C27.2844 24.2305 24.2305 27.2844 20.4633 27.2844ZM20.4633 9.95513C14.6597 9.95513 9.95513 14.6597 9.95513 20.4633C9.95513 26.2668 14.6597 30.9714 20.4633 30.9714C26.2668 30.9714 30.9714 26.2668 30.9714 20.4633C30.9714 14.6597 26.2668 9.95513 20.4633 9.95513V9.95513ZM33.8422 9.53995C33.8422 10.8962 32.7428 11.9955 31.3866 11.9955C30.0305 11.9955 28.931 10.8962 28.931 9.53995C28.931 8.18377 30.0305 7.08431 31.3866 7.08431C32.7428 7.08431 33.8422 8.18377 33.8422 9.53995"
+                fill="#FBF084" />
+            </svg>
+          </a>
+
+          <!-- Imagen Mano con Churro -->
+          <div class="about-hand-img-wrapper">
+            <img src="./assets/images/37083498c8842b3b34ac082cbb41ba3950a972e9.png"
+              alt="Mano sosteniendo un auténtico churro artesanal crocante de Churn" class="about-hand-img"
+              loading="lazy" decoding="async">
+          </div>
+
+          <!-- Tarjeta Chef Evelyn -->
+          <div class="chef-card chef-evelyn">
+            <img src="./assets/images/8b83ef33ce6100787d8b2eac170765071d176895.png"
+              alt="Evelyn, maestra pastelera y cofundadora de Churn Churrería Artesanal" class="chef-photo"
+              loading="lazy" decoding="async">
+            <h3 class="chef-name">Evelyn</h3>
+          </div>
+
+          <!-- Tarjeta Chef Sebastian -->
+          <div class="chef-card chef-sebastian">
+            <img src="./assets/images/bf0cace089a0e4c2f1f3eac74efa37bb1d7487bb.png"
+              alt="Sebastian, maestro churrero y cofundador de Churn Churrería Artesanal" class="chef-photo"
+              loading="lazy" decoding="async">
+            <h3 class="chef-name">Sebastian</h3>
+          </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- VASO DE CHURROS FLOTANTE (INTERSECCIÓN HERO / SOBRE)   -->
+        <!-- ====================================================== -->
+        <div id="churros-flotante" class="churros-floating-bowl">
+          <img src="./assets/images/aaad631c7fcefde09171c1d740709ce4082908a5.png"
+            alt="Vaso con churros artesanales crujientes recién preparados Churn" loading="lazy" decoding="async">
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 3: PRODUCTOS (CARRUSEL PURO)                   -->
+        <!-- ====================================================== -->
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 3: PRODUCTOS (CARRUSEL INTERACTIVO)            -->
+        <!-- ====================================================== -->
+        <section id="productos" class="absolute bg-[#fff9ba] h-[969px] left-0 overflow-clip top-[1943px] w-[1512px]"
+          data-name="Productos">
+          <!-- Formas geométricas de fondo (mismo fondo orgánico de desktop) -->
+          <div class="fondo-decorativo-productos products-bg-decorations">
+            <div
+              class="forma-decorativa-productos products-deco absolute flex h-[2604.72px] items-center justify-center left-[-81px] top-[-1115px] w-[2623.02px]">
+              <div class="flex-none rotate-[-45.94deg]">
+                <div class="h-[2242.101px] relative w-[1454.969px]">
+                  <svg class="absolute block inset-0 size-full" fill="none" height="2242.1" preserveAspectRatio="none"
+                    viewBox="0 0 1454.97 2242.1" width="1454.97">
+                    <path
+                      d="M150.387 0L1454.97 0V2242.1L241.842 2236.96C241.842 1902.43 -26.2642 1606.12 2.10202 1338.6C2.10202 1025.78 223.409 918.832 272.86 590.894C272.86 590.894 322.244 129.647 150.387 0Z"
+                      fill="#FBF084" id="Rectangle 1"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="forma-decorativa-productos products-deco absolute flex h-[2034.448px] items-center justify-center left-[-1113px] top-[95.05px] w-[2010.649px]">
+              <div class="flex-none rotate-[136.58deg]">
+                <div class="h-[1735.31px] relative w-[1126.097px]">
+                  <svg class="absolute block inset-0 size-full" fill="none" height="1735.31" preserveAspectRatio="none"
+                    viewBox="0 0 1126.1 1735.31" width="1126.1">
+                    <path
+                      d="M116.395 0L1126.1 0V1735.31L187.177 1731.33C187.177 1472.42 -20.3276 1243.08 1.62689 1036.03C1.62689 793.916 172.911 711.145 211.185 457.332C211.185 457.332 249.406 100.342 116.395 0Z"
+                      fill="#FBF084" id="Rectangle 2"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Título de la Sección Semántico H2 -->
+          <h2
+            class="titulo-productos products-title [word-break:break-word] absolute font-['Clash_Display_Variable:Semibold',sans-serif] font-semibold leading-[normal] left-[calc(50%+103px)] not-italic text-[#f25c7a] text-[100px] top-[64px] w-[564px]">
+            Productos</h2>
+
+          <!-- Títulos de Productos H3 (Crossfade dinámico) -->
+          <div id="product-titles"
+            class="titulos-productos absolute h-[50px] left-[859px] top-[309px] w-[533px] pointer-events-none">
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-100 translate-y-0"
+              data-title-index="0">Clásico</h3>
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-0 -translate-y-2 pointer-events-none"
+              data-title-index="1">Chocolate</h3>
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-0 -translate-y-2 pointer-events-none"
+              data-title-index="2">Relleno de DDL</h3>
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-0 -translate-y-2 pointer-events-none"
+              data-title-index="3">Chocolate Blanco</h3>
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-0 -translate-y-2 pointer-events-none"
+              data-title-index="4">Relleno Crema Pastelera</h3>
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-0 -translate-y-2 pointer-events-none"
+              data-title-index="5">Chipá</h3>
+            <h3
+              class="absolute left-0 top-0 font-['Clash_Display_Variable:Semibold',sans-serif] leading-[normal] not-italic text-[#f25c7a] text-[32px] whitespace-nowrap transition-all duration-400 ease-in-out opacity-0 -translate-y-2 pointer-events-none"
+              data-title-index="6">Berlinesa</h3>
+          </div>
+
+          <!-- Descripción del Producto -->
+          <p
+            class="descripcion-producto products-desc [word-break:break-word] absolute font-['Outfit:Regular','Outfit',sans-serif] font-normal leading-[28px] left-[859px] not-italic text-[#5d2610] text-[20px] top-[380px] w-[533px]">
+            Crujientes por fuera, suaves por dentro. Elaborados al momento con ingredientes seleccionados para que cada
+            bocado sea una experiencia inolvidable.</p>
+
+          <!-- Indicadores de navegación (puntos/dots del carrusel mobile) -->
+          <div class="puntos-carrusel product-carousel-dots" id="product-dots" aria-label="Navegación de productos">
+            <button type="button" class="punto-carrusel product-dot is-active activo" data-dot-index="0"
+              aria-label="Ver Clasico"></button>
+            <button type="button" class="punto-carrusel product-dot" data-dot-index="1"
+              aria-label="Ver Chocolate"></button>
+            <button type="button" class="punto-carrusel product-dot" data-dot-index="2"
+              aria-label="Ver Relleno de DDL"></button>
+            <button type="button" class="punto-carrusel product-dot" data-dot-index="3"
+              aria-label="Ver Chocolate Blanco"></button>
+            <button type="button" class="punto-carrusel product-dot" data-dot-index="4"
+              aria-label="Ver Relleno Crema Pastelera"></button>
+            <button type="button" class="punto-carrusel product-dot" data-dot-index="5" aria-label="Ver Chipa"></button>
+            <button type="button" class="punto-carrusel product-dot" data-dot-index="6"
+              aria-label="Ver Berlinesa"></button>
+          </div>
+
+          <!-- Flechas de navegación del Carrusel (solo mobile) -->
+          <button type="button" class="flecha-carrusel flecha-anterior product-nav-arrow product-nav-prev"
+            id="product-prev-btn" aria-label="Producto anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="flecha-carrusel flecha-siguiente product-nav-arrow product-nav-next"
+            id="product-next-btn" aria-label="Producto siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Escaparate Central (Showcase) -->
+          <div id="product-showcase"
+            class="escaparate-producto absolute flex h-[616px] items-center justify-center left-[325px] top-[177px] w-[164px]">
+            <!-- 0: Clásico -->
+            <div data-showcase-index="0"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-100 scale-100 pointer-events-auto">
+              <div class="-scale-y-100 flex-none rotate-180">
+                <div class="h-[616px] relative w-[164px]" data-name="Clasico">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="Churro clásico artesanal crujiente espolvoreado con azúcar" class="absolute max-w-none"
+                      style="height:118.83%;left:-10.98%;top:-9.42%;width:297.56%"
+                      src="./assets/images/2bf819c03a8e33e3c4105b05d1d1c483cb213b40.png" loading="lazy"
+                      decoding="async" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1: Chocolate -->
+            <div data-showcase-index="1"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 scale-95 pointer-events-none">
+              <div class="-scale-y-100 flex-none rotate-180">
+                <div class="h-[616px] relative w-[164px]" data-name="Chocolate">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="Churro artesanal bañado en exquisito chocolate semi-amargo" class="absolute max-w-none"
+                      style="height:117.31%;left:-98.13%;top:-7.85%;width:305%"
+                      src="./assets/images/2bf819c03a8e33e3c4105b05d1d1c483cb213b40.png" loading="lazy"
+                      decoding="async" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2: Relleno de DDL -->
+            <div data-showcase-index="2"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 scale-95 pointer-events-none">
+              <div class="-scale-y-100 flex-none rotate-180">
+                <div class="h-[616px] relative w-[164px]" data-name="Relleno de DDL">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="Churro artesanal relleno de abundante dulce de leche argentino"
+                      class="absolute max-w-none" style="height:115.64%;left:-203.31%;top:-6.95%;width:323.18%"
+                      src="./assets/images/2bf819c03a8e33e3c4105b05d1d1c483cb213b40.png" loading="lazy"
+                      decoding="async" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3: Chocolate Blanco -->
+            <div data-showcase-index="3"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 scale-95 pointer-events-none">
+              <div class="h-[616px] relative w-[164px] overflow-hidden pointer-events-none">
+                <img alt="Churro artesanal con crocante baño de chocolate blanco premium" class="absolute max-w-none"
+                  style="height:650px;width:auto;left:50%;transform:translateX(-50%);top:-16px"
+                  src="./assets/images/0d43ca69d8ae725a6bbd429c7f435c1e2bc05ae9.png" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <!-- 4: Relleno Crema Pastelera -->
+            <div data-showcase-index="4"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 scale-95 pointer-events-none">
+              <div class="h-[616px] relative w-[164px] overflow-hidden pointer-events-none">
+                <img alt="Churro artesanal con relleno suave de crema pastelera casera" class="absolute max-w-none"
+                  style="height:500px;width:auto;left:50%;transform:translateX(-52%);top:45px"
+                  src="./assets/images/6fd3a3d4f8162cac669be1a1add6dbe046739e93.png" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <!-- 5: Chipa -->
+            <div data-showcase-index="5"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 scale-95 pointer-events-none">
+              <div class="h-[616px] relative w-[164px] flex items-center justify-center pointer-events-none">
+                <div class="w-[320px] h-[320px] relative overflow-hidden shrink-0">
+                  <img alt="Chipá de queso caliente y esponjoso tradicional" class="absolute max-w-none"
+                    style="width:675px;height:1012px;left:-183px;top:-433px"
+                    src="./assets/images/b292627c16945cb3960838d587bad2954c848d99.png" loading="lazy"
+                    decoding="async" />
+                </div>
+              </div>
+            </div>
+            <!-- 6: Berlinesa -->
+            <div data-showcase-index="6"
+              class="item-escaparate product-showcase-item absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 scale-95 pointer-events-none">
+              <div class="h-[616px] relative w-[164px] flex items-center justify-center pointer-events-none">
+                <div class="w-[340px] h-[390px] relative overflow-hidden shrink-0 -translate-x-[10px]">
+                  <img alt="Berlinesa artesanal rellena espolvoreada con azúcar" class="absolute max-w-none"
+                    style="height:691px;width:auto;left:-94px;top:-227px"
+                    src="./assets/images/23465e2e445ccc1b9cce0c282c3d4561165d2d97.png" loading="lazy"
+                    decoding="async" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrusel de Miniaturas (desktop): una fila deslizable con flechas -->
+          <div class="thumbs-carousel" aria-label="Elegir producto">
+            <button type="button" class="thumbs-arrow" id="thumbs-prev" aria-label="Producto anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="thumbs-strip" id="thumbs-strip">
+              <button type="button" class="thumbs-item" data-thumb-index="0" aria-label="Seleccionar Clásico">
+                <span class="thumbs-crop" style="width:34px;height:106px"><img alt="Miniatura Churro Clásico"
+                    src="./assets/images/2bf819c03a8e33e3c4105b05d1d1c483cb213b40.png"
+                    style="height:118.83%;left:-10.98%;top:-9.42%;width:297.56%" loading="lazy" decoding="async"></span>
+              </button>
+              <button type="button" class="thumbs-item" data-thumb-index="1" aria-label="Seleccionar Chocolate">
+                <span class="thumbs-crop" style="width:33px;height:106px"><img alt="Miniatura Churro con Chocolate"
+                    src="./assets/images/2bf819c03a8e33e3c4105b05d1d1c483cb213b40.png"
+                    style="height:117.31%;left:-98.13%;top:-7.85%;width:305%" loading="lazy" decoding="async"></span>
+              </button>
+              <button type="button" class="thumbs-item" data-thumb-index="2" aria-label="Seleccionar Relleno de DDL">
+                <span class="thumbs-crop" style="width:25px;height:106px"><img
+                    alt="Miniatura Churro Relleno Dulce de Leche"
+                    src="./assets/images/2bf819c03a8e33e3c4105b05d1d1c483cb213b40.png"
+                    style="height:115.64%;left:-203.31%;top:-6.95%;width:323.18%" loading="lazy"
+                    decoding="async"></span>
+              </button>
+              <button type="button" class="thumbs-item" data-thumb-index="3" aria-label="Seleccionar Chocolate Blanco">
+                <span class="thumbs-crop" style="width:26px;height:100px"><img alt="Miniatura Churro Chocolate Blanco"
+                    src="./assets/images/0d43ca69d8ae725a6bbd429c7f435c1e2bc05ae9.png"
+                    style="height:100%;left:0;top:0;width:100%;object-fit:cover" loading="lazy" decoding="async"></span>
+              </button>
+              <button type="button" class="thumbs-item" data-thumb-index="4"
+                aria-label="Seleccionar Relleno Crema Pastelera">
+                <span class="thumbs-crop" style="width:36px;height:106px"><img alt="Miniatura Churro Crema Pastelera"
+                    src="./assets/images/6fd3a3d4f8162cac669be1a1add6dbe046739e93.png"
+                    style="height:100%;left:-28.26%;top:0;width:147.19%" loading="lazy" decoding="async"></span>
+              </button>
+              <button type="button" class="thumbs-item" data-thumb-index="5" aria-label="Seleccionar Chipa">
+                <span class="thumbs-crop" style="width:96px;height:96px"><img alt="Miniatura Chipá de Queso"
+                    src="./assets/images/b292627c16945cb3960838d587bad2954c848d99.png"
+                    style="height:218.1%;left:-22.68%;top:-74.9%;width:145.37%" loading="lazy" decoding="async"></span>
+              </button>
+              <button type="button" class="thumbs-item" data-thumb-index="6" aria-label="Seleccionar Berlinesa">
+                <span class="thumbs-crop" style="width:89px;height:89px"><img alt="Miniatura Berlinesa Rellena"
+                    src="./assets/images/23465e2e445ccc1b9cce0c282c3d4561165d2d97.png"
+                    style="height:163.55%;left:-11.59%;top:-49.33%;width:123.18%" loading="lazy"
+                    decoding="async"></span>
+              </button>
+            </div>
+            <button type="button" class="thumbs-arrow" id="thumbs-next" aria-label="Producto siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 4: MAYORISTAS                                  -->
+        <!-- ====================================================== -->
+        <section id="mayorista" class="wholesale-section" data-name="Mayorista">
+          <h2 class="wholesale-title">Mayoristas</h2>
+          <p class="wholesale-subtitle">¿Tenés un negocio gastronómico o cafetería?</p>
+
+          <!-- Tira de Logos de Clientes / Socios -->
+          <div class="barra-mayoristas wholesale-partners-bar">
+            <div class="lista-mayoristas partners-list">
+              <div class="logo-mayorista partner-logo partner-logo-1"><img
+                  src="./assets/images/f8c06879e5a990b0ba2077eb62e148cb407d3ed0.png"
+                  alt="Cliente mayorista asociado a Churn" loading="lazy" decoding="async"></div>
+              <div class="logo-mayorista partner-logo partner-logo-2"><img
+                  src="./assets/images/55e4232f861dee05a6df19f7da4cf8bac45671ae.png"
+                  alt="Cafetería cliente de Churn churros" loading="lazy" decoding="async"></div>
+              <div class="logo-mayorista partner-logo partner-logo-3"><img
+                  src="./assets/images/3bb7b6e9db868b91f3ff1d59d27d3e612f5c4169.png"
+                  alt="Comercio gastronómico aliado Churn" loading="lazy" decoding="async"></div>
+              <div class="logo-mayorista partner-logo partner-logo-4"><img
+                  src="./assets/images/3b59e6a62b30b26a5372c2da4fe4048f8fee6852.png"
+                  alt="Punto de venta mayorista Churn" loading="lazy" decoding="async"></div>
+              <div class="logo-mayorista partner-logo partner-logo-5"><img
+                  src="./assets/images/088841d40ee0f73cea4932d6eb9750a1daf10a0f.png"
+                  alt="Distribuidor de churros artesanales Churn" loading="lazy" decoding="async"></div>
+              <div class="logo-mayorista partner-logo partner-logo-6"><img
+                  src="./assets/images/44b635701bc74d96f0e8f29deda39715d8eb1458.png"
+                  alt="Negocio cliente mayorista Churn" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+
+          <p class="wholesale-description">Llevá Churn a tus clientes con un precio especial y entregas programadas</p>
+
+          <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%21%2520Quiero%2520hacerte%2520un%2520pedido&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafN3R5CNTGIslj_UbaNvihkE4BYiP-1l1UafSDGPbGMYuj22YgcrqD0tvtkQw_aem_4cGZSrb9NsQuetuQtjwTtg"
+            target="_blank" rel="noopener noreferrer" class="wholesale-cta-btn"
+            aria-label="Realizar Pedido Mayorista por WhatsApp">
+            <span>Realizar Pedido</span>
+          </a>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 5: GALERÍA                                     -->
+        <!-- ====================================================== -->
+        <section id="galeria" class="gallery-section" data-name="Image Gallery">
+          <h2 class="gallery-title">Galería de Momentos Churn</h2>
+
+          <div class="gallery-item gallery-center">
+            <img src="./assets/images/92bc2a11d6b4eeec2c4de06f4d456246317aec26.png"
+              alt="Clientes disfrutando de churros recién horneados en el local de Churn" loading="lazy"
+              decoding="async">
+          </div>
+          <div class="gallery-item gallery-top-left">
+            <div class="gallery-crop"><img src="./assets/images/f6d7e1750a95ca807205b16c44d3880c0a6d2af4.png"
+                alt="Elaboración artesanal de churros crocantes en la cocina de Churn" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="gallery-item gallery-bottom-left">
+            <img src="./assets/images/654c4bd533615fd6895411b194db8fa6b694cbe2.png"
+              alt="Churros rellenos de dulce de leche listos para servir" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-top-right">
+            <img src="./assets/images/c0ef6d1ea5cbf012eb36a77c7b8f3eef85f51746.png"
+              alt="Momento dulce compartiendo churros Churn en Villa Madero" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-bottom-right">
+            <img src="./assets/images/8988cf56bb7b12470fc951ff801059ca50c0a8a8.png"
+              alt="Variedad de churros rellenos y chipas artesanales recién horneados" loading="lazy" decoding="async">
+          </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- SECCIÓN 6: DÓNDE ESTAMOS / FOOTER                      -->
+        <!-- ====================================================== -->
+        <section id="donde-estamos" class="location-section" data-name="Final CTA">
+          <h2 class="location-section-title">¿Dónde estamos?</h2>
+
+          <!-- Tarjeta con Mapa de Google Interactivo -->
+          <div class="map-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.5919573707283!2d-58.491351788804735!3d-34.6911114313603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccecba08866cd%3A0xb40d37c44360b63a!2sChurn!5e0!3m2!1ses-419!2sar!4v1791146187563!5m2!1ses-419!2sar"
+              class="map-iframe" style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin" title="Ubicación de Churn en Google Maps"></iframe>
+          </div>
+
+          <!-- Información y Horarios -->
+          <div class="location-details">
+            <address class="location-address" style="font-style: normal;">Cno. de la Virgen María 89, Villa Madero,
+              Buenos Aires</address>
+            <p class="location-hours">
+              Viernes: 15:30 – 19:00<br>
+              Sábados: 09:00 – 12:30 y 15:30 – 19:00<br>
+              Domingos: 09:00 – 12:30 y 15:30 – 19:00
+            </p>
+            <a href="https://www.google.com/maps/place/Churn/@-34.6911114,-58.4913518,17z" target="_blank"
+              rel="noopener noreferrer" class="btn-maps" aria-label="Abrir ubicación de Churn en Google Maps">
+              <span>Abrir en Maps</span>
+              <svg class="btn-maps-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Pie de Página (Footer Empresarial Adaptado a Churn) -->
+          <footer class="main-footer" role="contentinfo">
+            <div class="footer-bg-bar"></div>
+            <div class="footer-corporate-container">
+              <!-- Columnas Principales -->
+              <div class="footer-columns">
+                <!-- Columna 1: Marca & Fundadores -->
+                <div class="footer-col footer-col-brand">
+                  <div class="footer-brand-header">
+                    <button type="button" class="footer-logo-btn" data-nav-target="Home" aria-label="Churn Inicio">
+                      <img src="./assets/images/churnLogo-amarillo.png" alt="Churn Churrería Artesanal - Logo Oficial"
+                        class="footer-logo-img" loading="lazy" decoding="async">
+                    </button>
+                  </div>
+                  <p class="footer-brand-desc">
+                    Churros de verdad, elaborados al momento con recetas tradicionales. Calidad, frescura y sabor en
+                    cada detalle.
+                  </p>
+                  <div class="footer-social-links" aria-label="Redes Sociales y Contacto">
+                    <a href="https://www.instagram.com/churreria.churn/" target="_blank" rel="noopener noreferrer"
+                      class="footer-social-btn" aria-label="Instagram de Churn">
+                      <svg viewBox="0 0 40.9265 40.9265" fill="none">
+                        <path
+                          d="M20.4633 0C14.9058 0 14.2089 0.0235767 12.0263 0.123123C9.84818 0.222486 8.36065 0.568461 7.059 1.07423C5.71336 1.59718 4.57218 2.29693 3.43458 3.43452C2.29693 4.57211 1.59718 5.71342 1.07429 7.05906C0.5684 8.36065 0.222547 9.84818 0.123062 12.0263C0.0235158 14.2089 0 14.9058 0 20.4633C0 26.0207 0.0235158 26.7176 0.123062 28.9002C0.222547 31.0783 0.5684 32.5658 1.07429 33.8674C1.59725 35.2131 2.29699 36.3542 3.43458 37.492C4.57224 38.6295 5.71336 39.3293 7.059 39.8523C8.36065 40.358 9.84818 40.7039 12.0263 40.8034C14.2089 40.9029 14.9058 40.9265 20.4633 40.9265C26.0207 40.9265 26.7176 40.9029 28.9002 40.8034C31.0783 40.704 32.5658 40.358 33.8674 39.8523C35.2131 39.3293 36.3542 38.6295 37.492 37.492C38.6295 36.3542 39.3293 35.2131 39.8523 33.8674C40.358 32.5658 40.704 31.0783 40.8034 28.9002C40.9029 26.7176 40.9265 26.0207 40.9265 20.4633C40.9265 14.9058 40.9029 14.2089 40.8034 12.0263C40.704 9.84818 40.358 8.36065 39.8523 7.05906C39.3293 5.71342 38.6295 4.57211 37.492 3.43452C36.3542 2.29693 35.2131 1.59718 33.8674 1.07423C32.5658 0.568461 31.0783 0.222486 28.9002 0.123123C26.7176 0.0235767 26.0207 0 20.4633 0ZM20.4633 3.68704C25.9271 3.68704 26.5744 3.70794 28.7321 3.80639C30.7273 3.89735 31.8108 4.23071 32.5318 4.51095C33.4871 4.88221 34.1687 5.32559 34.8848 6.04167C35.6009 6.75774 36.0443 7.43946 36.4155 8.39459C36.6958 9.11566 37.0291 10.1992 37.1201 12.1943C37.2185 14.3521 37.2394 14.9994 37.2394 20.4632C37.2394 25.9271 37.2185 26.5744 37.1201 28.7321C37.0291 30.7273 36.6958 31.8108 36.4155 32.5318C36.0443 33.4871 35.6009 34.1687 34.8848 34.8848C34.1687 35.6009 33.487 36.0443 32.5319 36.4155C31.8108 36.6958 30.7273 37.0291 28.7321 37.1201C26.5747 37.2185 25.9276 37.2394 20.4632 37.2394C14.9989 37.2394 14.3519 37.2185 12.1943 37.12C10.1991 37.0291 9.11566 36.6958 8.39465 36.4155C7.4394 36.0443 6.75774 35.6009 6.04173 34.8848C5.32565 34.1687 4.88221 33.487 4.51095 32.5319C4.23071 31.8108 3.89741 30.7273 3.80639 28.7321C3.70794 26.5744 3.68704 25.9271 3.68704 20.4632C3.68704 14.9994 3.70794 14.3521 3.80639 12.1943C3.89741 10.1991 4.23071 9.11566 4.51095 8.39465C4.88221 7.4394 5.32565 6.75774 6.04167 6.04173C6.75774 5.32559 7.43946 4.88221 8.39459 4.51095C9.11566 4.23071 10.1992 3.89735 12.1943 3.80639C14.3521 3.70794 14.9994 3.68704 20.4632 3.68704"
+                          fill="#FBF084" />
+                        <path
+                          d="M20.4633 27.2844C16.6961 27.2844 13.6422 24.2305 13.6422 20.4633C13.6422 16.6961 16.6961 13.6422 20.4633 13.6422C24.2305 13.6422 27.2844 16.6961 27.2844 20.4633C27.2844 24.2305 24.2305 27.2844 20.4633 27.2844ZM20.4633 9.95513C14.6597 9.95513 9.95513 14.6597 9.95513 20.4633C9.95513 26.2668 14.6597 30.9714 20.4633 30.9714C26.2668 30.9714 30.9714 26.2668 30.9714 20.4633C30.9714 14.6597 26.2668 9.95513 20.4633 9.95513V9.95513ZM33.8422 9.53995C33.8422 10.8962 32.7428 11.9955 31.3866 11.9955C30.0305 11.9955 28.931 10.8962 28.931 9.53995C28.931 8.18377 30.0305 7.08431 31.3866 7.08431C32.7428 7.08431 33.8422 8.18377 33.8422 9.53995"
+                          fill="#FBF084" />
+                      </svg>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola%21%2520Quiero%2520hacerte%2520un%2520pedido&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafN3R5CNTGIslj_UbaNvihkE4BYiP-1l1UafSDGPbGMYuj22YgcrqD0tvtkQw_aem_4cGZSrb9NsQuetuQtjwTtg"
+                      target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+                      aria-label="WhatsApp de Churn">
+                      <svg viewBox="0 0 24 24" fill="#FBF084">
+                        <path
+                          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.04 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.74 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.57 14.41C16.32 14.28 15.1 13.68 14.87 13.6C14.65 13.52 14.48 13.47 14.32 13.72C14.15 13.97 13.68 14.52 13.53 14.68C13.39 14.85 13.24 14.87 12.99 14.75C12.74 14.62 11.95 14.36 11 13.52C10.26 12.87 9.77 12.06 9.62 11.81C9.48 11.56 9.6 11.43 9.73 11.3C9.84 11.19 9.98 11.01 10.1 10.87C10.23 10.72 10.27 10.62 10.35 10.45C10.43 10.29 10.39 10.14 10.33 10.02C10.27 9.89 9.77 8.67 9.57 8.16C9.37 7.67 9.17 7.74 9.02 7.73C8.88 7.72 8.71 7.72 8.55 7.72C8.38 7.72 8.11 7.78 7.89 8.03C7.66 8.27 7.03 8.87 7.03 10.09C7.03 11.3 7.91 12.47 8.04 12.63C8.16 12.8 9.78 15.3 12.26 16.37C12.85 16.63 13.31 16.78 13.67 16.89C14.26 17.08 14.8 17.05 15.22 16.99C15.7 16.92 16.68 16.39 16.89 15.81C17.09 15.22 17.09 14.72 17.03 14.62C16.97 14.52 16.82 14.46 16.57 14.41Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Columna 2: Navegación -->
+                <div class="footer-col">
+                  <h3 class="footer-col-title">Navegación</h3>
+                  <ul class="footer-links-list">
+                    <li><button type="button" data-nav-target="Home" class="footer-link">Inicio</button></li>
+                    <li><button type="button" data-nav-target="Sobre Nosotros" class="footer-link">Sobre
+                        Nosotros</button></li>
+                    <li><button type="button" data-nav-target="Productos" class="footer-link">Nuestros
+                        Productos</button></li>
+                    <li><button type="button" data-nav-target="Mayoristas" class="footer-link">Ventas
+                        Mayoristas</button></li>
+                    <li><button type="button" data-nav-target="Donde estamos" class="footer-link">Dónde Estamos</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Columna 3: Horarios de Atención -->
+                <div class="footer-col">
+                  <h3 class="footer-col-title">Horarios del Local</h3>
+                  <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                      <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      <span><strong>Viernes:</strong> 15:30 a 19:00 hs</span>
+                    </li>
+                    <li class="footer-contact-item">
+                      <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      <span><strong>Sábados:</strong> 09:00 a 12:30 y 15:30 a 19:00 hs</span>
+                    </li>
+                    <li class="footer-contact-item">
+                      <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      <span><strong>Domingos:</strong> 09:00 a 12:30 y 15:30 a 19:00 hs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Barra Inferior de Copyright y Datos -->
+              <div class="footer-bottom-bar">
+                <p class="footer-copyright">
+                  © 2026 Churn Churrería Artesanal.
+                </p>
+                <div class="footer-tagline-location">
+                  <span>Diseñado y desarrollado por <a href="https://www.gonzaorellana.com.ar/" target="_blank"
+                      rel="noopener noreferrer" class="footer-author-link">Gonzalo Orellana</a></span>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="./js/main.js" defer></script>
+</body>
+
+</html>
