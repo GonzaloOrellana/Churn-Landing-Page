@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Ubicación del Sitemap XML
-Sitemap: https://churreriachurn.com.ar/sitemap.xml
+Sitemap: https://churnwebsite.vercel.app/sitemap.xml

@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://churreriachurn.com.ar/</loc>
+    <loc>https://churnwebsite.vercel.app/</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://churreriachurn.com.ar/assets/images/churnLogo.png</image:loc>
+      <image:loc>https://churnwebsite.vercel.app/assets/images/og-image.png</image:loc>
       <image:title>Churn Churrería Artesanal</image:title>
       <image:caption>Churros artesanales crujientes y rellenos elaborados al momento en Villa Madero</image:caption>
     </image:image>
